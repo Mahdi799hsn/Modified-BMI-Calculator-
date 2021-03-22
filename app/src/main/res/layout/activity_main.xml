@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/txtName"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Name" />
+
+    <EditText
+        android:id="@+id/txtWeight"
+        android:layout_width="295dp"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtName"
+        android:hint="Weight" />
+
+    <EditText
+        android:id="@+id/txtHeight"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtWeight"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:hint="Height" />
+
+    <Button
+        android:id="@+id/btnEnter"
+        android:layout_width="295dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtHeight"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="Enter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEnter"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:id="@+id/txtDisplay1"
+        />
+
+    <TextView
+        android:id="@+id/txtDisplay2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtDisplay1"
+        android:textColor="@color/black"
+        android:gravity="center" />
+
+</RelativeLayout>
